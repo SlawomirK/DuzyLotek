@@ -68,10 +68,7 @@ public class Liczba implements Comparable<Liczba>{
         this.ileRazyPodRzadOstatnio = ileRazyPodRzadOstatnio;
     }
 
-    /*Każda liczba jest równie prawdopodobna jeżeli weźmie się kazde losowanie oddzielnie.
-     * Bez znaczenia jest czy losuje sie tą samą liczbę pod rząd, czy jak dawno ją wywlosowano.
-     * Póki co pod uwagę będę brał jedynie częstość losowania poszczególnych numerów. Ich czestosc
-     * powinna dązyć do równego rozkładu*/
+  
     public double getPrawdopodobienstwo() {//każda liczba jest równie prawdopodobna
         double kiedyOstatnio = prawdopodobienstwoJakDawnoOstatnioLosowano();
         BigDecimal kolejno = obliczPrawdopodobienstwoPoKolejnosci();
